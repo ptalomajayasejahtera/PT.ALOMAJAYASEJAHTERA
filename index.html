@@ -193,3 +193,259 @@ line-height:1.7;
 .features{
 background:#111;
 }
+/* FEATURES SECTION */
+.features-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature-card{
+background:#181818;
+padding:25px;
+border-radius:15px;
+border:1px solid rgba(212,175,55,.2);
+text-align:center;
+transition:.3s;
+}
+
+.feature-card:hover{
+transform:translateY(-8px);
+border-color:var(--gold);
+}
+
+.feature-card h3{
+color:var(--gold);
+margin-bottom:10px;
+}
+
+.feature-card p{
+color:#ccc;
+line-height:1.6;
+}
+
+/* CONTACT */
+.contact{
+background:#0f0f0f;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:start;
+}
+
+.contact-info h3{
+color:var(--gold);
+font-size:28px;
+margin-bottom:15px;
+}
+
+.contact-info p{
+color:#ccc;
+line-height:1.7;
+margin-bottom:10px;
+}
+
+.contact-form{
+background:#181818;
+padding:30px;
+border-radius:15px;
+border:1px solid rgba(212,175,55,.2);
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+background:#111;
+border:1px solid #333;
+border-radius:10px;
+color:white;
+outline:none;
+}
+
+.contact-form button{
+width:100%;
+padding:14px;
+background:var(--gold);
+border:none;
+border-radius:10px;
+font-weight:700;
+cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+background:#000;
+text-align:center;
+padding:30px;
+border-top:1px solid rgba(212,175,55,.2);
+color:#aaa;
+}
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+<div class="container">
+<nav>
+<div class="logo">ALOMA</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="container">
+<h1>PT <span>Aloma Jaya Sejahtera</span></h1>
+<p>Produsen baterai industri berkualitas tinggi dengan standar internasional untuk kebutuhan energi masa depan.</p>
+<a href="#about" class="hero-btn">Lihat Lebih Lanjut</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+<div class="container">
+<div class="section-title">
+<h2>Tentang Kami</h2>
+<p>Perusahaan manufaktur baterai terpercaya</p>
+</div>
+
+<div class="about-grid">
+<div class="about-img">
+Gambar Perusahaan
+</div>
+
+<div class="about-content">
+<h3>Kualitas & Inovasi</h3>
+<p>
+PT Aloma Jaya Sejahtera berfokus pada produksi baterai dengan kapasitas besar
+dan daya tahan tinggi untuk industri dan komersial.
+</p>
+
+<div class="vm-grid">
+<div class="vm-card">
+<h4>Visi</h4>
+<p>Menjadi produsen baterai terbaik di Indonesia.</p>
+</div>
+
+<div class="vm-card">
+<h4>Misi</h4>
+<p>Menyediakan energi berkualitas tinggi dan ramah lingkungan.</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+<div class="container">
+<div class="section-title">
+<h2>Produk Kami</h2>
+<p>Solusi baterai untuk berbagai kebutuhan</p>
+</div>
+
+<div class="product-grid">
+
+<div class="product-card">
+<h3>Baterai 4820 Ah</h3>
+<p>Dirancang untuk kebutuhan industri berat dengan daya tahan tinggi.</p>
+</div>
+
+<div class="product-card">
+<h3>Baterai 4850 Ah</h3>
+<p>Kapasitas besar untuk sistem penyimpanan energi skala besar.</p>
+</div>
+
+<div class="product-card">
+<h3>Custom Battery</h3>
+<p>Solusi baterai sesuai kebutuhan pelanggan industri.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+<div class="container">
+<div class="section-title">
+<h2>Keunggulan Kami</h2>
+<p>Mengapa memilih PT Aloma Jaya Sejahtera</p>
+</div>
+
+<div class="features-grid">
+
+<div class="feature-card">
+<h3>Teknologi Modern</h3>
+<p>Produksi menggunakan mesin dan teknologi terbaru.</p>
+</div>
+
+<div class="feature-card">
+<h3>Kualitas Tinggi</h3>
+<p>Standar kontrol kualitas ketat di setiap produk.</p>
+</div>
+
+<div class="feature-card">
+<h3>Harga Kompetitif</h3>
+<p>Memberikan harga terbaik untuk pasar industri.</p>
+</div>
+
+<div class="feature-card">
+<h3>Ramah Lingkungan</h3>
+<p>Proses produksi yang lebih aman dan ramah lingkungan.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<div class="container">
+<div class="section-title">
+<h2>Kontak Kami</h2>
+<p>Hubungi untuk kerja sama</p>
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-info">
+<h3>PT Aloma Jaya Sejahtera</h3>
+<p>Email: (kosong dulu)</p>
+<p>Telepon: (kosong dulu)</p>
+<p>Alamat: (kosong dulu)</p>
+</div>
+
+<div class="contact-form">
+<input type="text" placeholder="Nama">
+<input type="email" placeholder="Email">
+<textarea rows="5" placeholder="Pesan"></textarea>
+<button>Kirim Pesan</button>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 PT Aloma Jaya Sejahtera. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
