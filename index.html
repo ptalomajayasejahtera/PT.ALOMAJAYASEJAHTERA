@@ -2,10 +2,12 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PT Aloma Jaya Sejahtera | Produsen Baterai Berkualitas</title>
-<meta name="description" content="PT Aloma Jaya Sejahtera bergerak di bidang produksi dan manufaktur baterai berkualitas tinggi untuk berbagai kebutuhan industri dan komersial.">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Company Profile Premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 *{
 margin:0;
@@ -14,254 +16,226 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 scroll-behavior:smooth;
 }
+
 :root{
---black:#0b0b0b;
+--bg:#070707;
+--card:#111;
 --gold:#d4af37;
---dark:#141414;
---white:#ffffff;
---gray:#bdbdbd;
+--text:#f1f1f1;
+--muted:#b8b8b8;
 }
+
 body{
-background:var(--black);
-color:var(--white);
+background:var(--bg);
+color:var(--text);
 overflow-x:hidden;
 }
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
+
+/* ===== NAVBAR PREMIUM ===== */
 header{
 position:fixed;
-width:100%;
 top:0;
-left:0;
-z-index:999;
-background:rgba(0,0,0,.85);
-backdrop-filter:blur(10px);
-border-bottom:1px solid rgba(212,175,55,.2);
+width:100%;
+z-index:1000;
+background:rgba(10,10,10,0.4);
+backdrop-filter:blur(14px);
+border-bottom:1px solid rgba(212,175,55,0.15);
 }
+
 nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 0;
+padding:16px 0;
 }
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
 .logo{
-font-size:26px;
-font-weight:800;
 color:var(--gold);
+font-weight:700;
+font-size:20px;
+letter-spacing:2px;
 }
+
 nav ul{
 display:flex;
+gap:22px;
 list-style:none;
-gap:30px;
 }
+
 nav ul li a{
-color:white;
+color:var(--text);
 text-decoration:none;
-font-weight:500;
-transition:.3s;
+font-size:14px;
+opacity:0.8;
+transition:0.3s;
 }
-nav ul li a:hover{
+
+nav ul li a:hover,
+nav ul li a.active{
 color:var(--gold);
+opacity:1;
 }
+
+/* ===== HERO PREMIUM ===== */
 .hero{
 height:100vh;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
+position:relative;
+padding-top:60px;
 background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80');
-background-size:cover;
-background-position:center;
+radial-gradient(circle at top, rgba(212,175,55,0.15), transparent 40%),
+linear-gradient(to bottom, #0a0a0a, #050505);
 }
+
+.hero::before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:rgba(212,175,55,0.08);
+filter:blur(120px);
+top:10%;
+left:50%;
+transform:translateX(-50%);
+z-index:0;
+}
+
+.hero-content{
+position:relative;
+z-index:1;
+}
+
 .hero h1{
-font-size:60px;
-font-weight:800;
-margin-bottom:20px;
+font-size:52px;
+font-weight:700;
 }
+
 .hero h1 span{
 color:var(--gold);
 }
+
 .hero p{
-max-width:800px;
+margin-top:15px;
+color:var(--muted);
+max-width:700px;
 margin:auto;
-font-size:18px;
-color:#ddd;
-line-height:1.8;
-}
-.hero-btn{
-display:inline-block;
-margin-top:30px;
-padding:14px 35px;
-background:var(--gold);
-color:black;
-font-weight:700;
-text-decoration:none;
-border-radius:50px;
-}
-section{
-padding:100px 0;
-}
-.section-title{
-text-align:center;
-margin-bottom:60px;
-}
-.section-title h2{
-font-size:40px;
-color:var(--gold);
-margin-bottom:15px;
-}
-.section-title p{
-color:var(--gray);
-}
-.about{
-background:#111;
-}
-.about-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
-}
-.about-img{
-height:450px;
-background:#1c1c1c;
-border:2px dashed var(--gold);
-border-radius:20px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:var(--gold);
-font-size:20px;
-}
-.about-content h3{
-font-size:32px;
-margin-bottom:20px;
-}
-.about-content p{
-color:#ccc;
-line-height:1.8;
-margin-bottom:20px;
-}
-.vm-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-margin-top:25px;
-}
-.vm-card{
-background:#1a1a1a;
-padding:25px;
-border-radius:15px;
-border-left:4px solid var(--gold);
-}
-.vm-card h4{
-color:var(--gold);
-margin-bottom:10px;
-}
-.products{
-background:#0f0f0f;
-}
-.product-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-.product-card{
-background:#181818;
-padding:30px;
-border-radius:20px;
-border:1px solid rgba(212,175,55,.2);
-transition:.3s;
-}
-.product-card:hover{
-transform:translateY(-8px);
-border-color:var(--gold);
-}
-.product-card h3{
-color:var(--gold);
-margin-bottom:15px;
-}
-.product-card p{
-color:#ccc;
 line-height:1.7;
 }
-.features{
-background:#111;
-}
-/* FEATURES SECTION */
-.features-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+
+.btn{
+margin-top:25px;
+display:inline-block;
+padding:13px 30px;
+background:linear-gradient(135deg,var(--gold),#f5d76e);
+color:#000;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+box-shadow:0 0 20px rgba(212,175,55,0.15);
 }
 
-.feature-card{
-background:#181818;
-padding:25px;
-border-radius:15px;
-border:1px solid rgba(212,175,55,.2);
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 0 30px rgba(212,175,55,0.3);
+}
+
+/* ===== SECTION ===== */
+section{
+padding:100px 0;
+opacity:0;
+transform:translateY(40px);
+transition:0.8s ease;
+}
+
+section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.title{
 text-align:center;
-transition:.3s;
+margin-bottom:50px;
 }
 
-.feature-card:hover{
+.title h2{
+font-size:34px;
+color:var(--gold);
+}
+
+.title p{
+color:var(--muted);
+margin-top:8px;
+font-size:14px;
+}
+
+/* ===== GRID ===== */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:22px;
+}
+
+/* ===== CARD PREMIUM ===== */
+.card{
+background:linear-gradient(145deg,#121212,#0d0d0d);
+padding:24px;
+border-radius:16px;
+border:1px solid rgba(255,255,255,0.05);
+transition:0.4s;
+position:relative;
+overflow:hidden;
+}
+
+.card::before{
+content:"";
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:linear-gradient(90deg,transparent,rgba(212,175,55,0.08),transparent);
+transition:0.6s;
+}
+
+.card:hover::before{
+left:100%;
+}
+
+.card:hover{
 transform:translateY(-8px);
-border-color:var(--gold);
+border-color:rgba(212,175,55,0.3);
 }
 
-.feature-card h3{
+.card h3{
 color:var(--gold);
 margin-bottom:10px;
+font-size:18px;
 }
 
-.feature-card p{
-color:#ccc;
+.card p{
+color:var(--muted);
+font-size:14px;
 line-height:1.6;
 }
 
-/* CONTACT */
-.contact{
-background:#0f0f0f;
-}
-
-.contact-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:start;
-}
-
-.contact-info h3{
-color:var(--gold);
-font-size:28px;
-margin-bottom:15px;
-}
-
-.contact-info p{
-color:#ccc;
-line-height:1.7;
-margin-bottom:10px;
-}
-
-.contact-form{
-background:#181818;
-padding:30px;
-border-radius:15px;
-border:1px solid rgba(212,175,55,.2);
-}
-
+/* ===== CONTACT ===== */
 .contact-form input,
 .contact-form textarea{
 width:100%;
 padding:12px;
-margin-bottom:15px;
-background:#111;
-border:1px solid #333;
+margin-bottom:12px;
+background:#0b0b0b;
+border:1px solid #222;
 border-radius:10px;
 color:white;
 outline:none;
@@ -269,183 +243,156 @@ outline:none;
 
 .contact-form button{
 width:100%;
-padding:14px;
-background:var(--gold);
+padding:12px;
+background:linear-gradient(135deg,var(--gold),#f5d76e);
 border:none;
 border-radius:10px;
-font-weight:700;
+font-weight:600;
 cursor:pointer;
+transition:0.3s;
 }
 
-/* FOOTER */
+.contact-form button:hover{
+transform:scale(1.02);
+}
+
+/* ===== FOOTER ===== */
 footer{
-background:#000;
 text-align:center;
 padding:30px;
-border-top:1px solid rgba(212,175,55,.2);
-color:#aaa;
+border-top:1px solid rgba(255,255,255,0.05);
+color:var(--muted);
+font-size:13px;
 }
-  </style>
+
+/* FIX */
+html,body{
+overflow-x:hidden;
+}
+</style>
 </head>
+
 <body>
 
-<!-- HEADER -->
 <header>
 <div class="container">
 <nav>
-<div class="logo">ALOMA</div>
+<div class="logo">NAMA PERUSAHAAN</div>
 <ul>
-<li><a href="#home">Home</a></li>
+<li><a href="#home" class="active">Home</a></li>
 <li><a href="#about">About</a></li>
-<li><a href="#products">Products</a></li>
-<li><a href="#features">Features</a></li>
+<li><a href="#product">Product</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 </div>
 </header>
 
-<!-- HERO -->
 <section class="hero" id="home">
-<div class="container">
-<h1>PT <span>Aloma Jaya Sejahtera</span></h1>
-<p>Produsen baterai industri berkualitas tinggi dengan standar internasional untuk kebutuhan energi masa depan.</p>
-<a href="#about" class="hero-btn">Lihat Lebih Lanjut</a>
+<div class="container hero-content">
+<h1>COMPANY <span>PROFILE</span></h1>
+<p>Deskripsi perusahaan akan diisi nanti.</p>
+<a href="#about" class="btn">Explore</a>
 </div>
 </section>
 
-<!-- ABOUT -->
-<section class="about" id="about">
+<section id="about">
 <div class="container">
-<div class="section-title">
+<div class="title">
 <h2>Tentang Kami</h2>
-<p>Perusahaan manufaktur baterai terpercaya</p>
+<p>Isi nanti</p>
 </div>
 
-<div class="about-grid">
-<div class="about-img">
-Gambar Perusahaan
+<div class="grid">
+<div class="card">
+<h3>Visi</h3>
+<p>Isi nanti</p>
 </div>
 
-<div class="about-content">
-<h3>Kualitas & Inovasi</h3>
-<p>
-PT Aloma Jaya Sejahtera berfokus pada produksi baterai dengan kapasitas besar
-dan daya tahan tinggi untuk industri dan komersial.
-</p>
-
-<div class="vm-grid">
-<div class="vm-card">
-<h4>Visi</h4>
-<p>Menjadi produsen baterai terbaik di Indonesia.</p>
-</div>
-
-<div class="vm-card">
-<h4>Misi</h4>
-<p>Menyediakan energi berkualitas tinggi dan ramah lingkungan.</p>
-</div>
-</div>
-
+<div class="card">
+<h3>Misi</h3>
+<p>Isi nanti</p>
 </div>
 </div>
 </div>
 </section>
 
-<!-- PRODUCTS -->
-<section class="products" id="products">
+<section id="product">
 <div class="container">
-<div class="section-title">
-<h2>Produk Kami</h2>
-<p>Solusi baterai untuk berbagai kebutuhan</p>
+<div class="title">
+<h2>Produk</h2>
+<p>Isi nanti</p>
 </div>
 
-<div class="product-grid">
-
-<div class="product-card">
-<h3>Baterai 4820 Ah</h3>
-<p>Dirancang untuk kebutuhan industri berat dengan daya tahan tinggi.</p>
+<div class="grid">
+<div class="card">
+<h3>Produk 1</h3>
+<p>Isi nanti</p>
 </div>
 
-<div class="product-card">
-<h3>Baterai 4850 Ah</h3>
-<p>Kapasitas besar untuk sistem penyimpanan energi skala besar.</p>
+<div class="card">
+<h3>Produk 2</h3>
+<p>Isi nanti</p>
 </div>
 
-<div class="product-card">
-<h3>Custom Battery</h3>
-<p>Solusi baterai sesuai kebutuhan pelanggan industri.</p>
+<div class="card">
+<h3>Produk 3</h3>
+<p>Isi nanti</p>
 </div>
-
 </div>
 </div>
 </section>
 
-<!-- FEATURES -->
-<section class="features" id="features">
+<section id="contact">
 <div class="container">
-<div class="section-title">
-<h2>Keunggulan Kami</h2>
-<p>Mengapa memilih PT Aloma Jaya Sejahtera</p>
+<div class="title">
+<h2>Kontak</h2>
+<p>Isi nanti</p>
 </div>
 
-<div class="features-grid">
-
-<div class="feature-card">
-<h3>Teknologi Modern</h3>
-<p>Produksi menggunakan mesin dan teknologi terbaru.</p>
-</div>
-
-<div class="feature-card">
-<h3>Kualitas Tinggi</h3>
-<p>Standar kontrol kualitas ketat di setiap produk.</p>
-</div>
-
-<div class="feature-card">
-<h3>Harga Kompetitif</h3>
-<p>Memberikan harga terbaik untuk pasar industri.</p>
-</div>
-
-<div class="feature-card">
-<h3>Ramah Lingkungan</h3>
-<p>Proses produksi yang lebih aman dan ramah lingkungan.</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-<div class="container">
-<div class="section-title">
-<h2>Kontak Kami</h2>
-<p>Hubungi untuk kerja sama</p>
-</div>
-
-<div class="contact-grid">
-
-<div class="contact-info">
-<h3>PT Aloma Jaya Sejahtera</h3>
-<p>Email: (kosong dulu)</p>
-<p>Telepon: (kosong dulu)</p>
-<p>Alamat: (kosong dulu)</p>
-</div>
-
-<div class="contact-form">
+<div class="card contact-form">
 <input type="text" placeholder="Nama">
 <input type="email" placeholder="Email">
 <textarea rows="5" placeholder="Pesan"></textarea>
-<button>Kirim Pesan</button>
-</div>
-
+<button>Kirim</button>
 </div>
 </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-<p>© 2026 PT Aloma Jaya Sejahtera. All Rights Reserved.</p>
+© 2026 Premium Company Profile
 </footer>
+
+<script>
+// SECTION ANIMATION
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+},{threshold:0.15});
+
+sections.forEach(sec=>{
+observer.observe(sec);
+});
+
+// ACTIVE NAV
+const links = document.querySelectorAll("nav ul li a");
+
+window.addEventListener("scroll", ()=>{
+let scrollPos = window.scrollY + 120;
+
+sections.forEach(sec=>{
+if(scrollPos > sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight){
+links.forEach(l=>l.classList.remove("active"));
+document.querySelector("a[href='#"+sec.id+"']")?.classList.add("active");
+}
+});
+});
+</script>
 
 </body>
 </html>
